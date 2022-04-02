@@ -6,15 +6,25 @@
     android:layout_height="75dp">
 
     <TextView
-        android:id="@+id/tvItem"
-        android:layout_width="0dp"
+        android:id="@+id/tvlistId"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Placeholder" />
+        tools:text="listId" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvlistId"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
